@@ -2,6 +2,7 @@ require 'api_version_constraint'
 
 Rails.application.routes.draw do
 
+  devise_for :users
   # Para configurar subdominio
   # namespace :api, defaults: { format: 'json' }, constraints: { subdomain: 'api' }, path: "/" do
   # exemplo: api.meudominio.com.br/usuarios
